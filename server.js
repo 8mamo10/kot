@@ -2,10 +2,11 @@ var http = require('http');
 var querystring = require('querystring')
 var webclient = require("request");
 const parse = querystring.parse
-var server = http.createServer();
+const server = http.createServer();
 
 const user_table = {
-  'user1' : 'key1'
+  'user1' : 'key1',
+  'user2' : 'key2',
 };
 
 server.on('request', function(req, res) {
